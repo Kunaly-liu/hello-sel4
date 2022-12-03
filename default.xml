@@ -20,4 +20,5 @@
   <project name="musllibc.git" path="projects/musllibc" revision="sel4"/>
   <project name="seL4_libs.git" revision="master" path="projects/seL4_libs"/>
   <project name="util_libs.git" revision="master" path="projects/util_libs"/>
+  <project name="sel4_projects_libs" revision="master" path="projects/sel4_projects_libs" remote="sel4proj"/>
 </manifest>
