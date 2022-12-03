@@ -11,6 +11,7 @@
     <linkfile src="settings.cmake" dest="settings.cmake"/>
     <linkfile src="domain_schedule.c" dest="domain_schedule.c"/>
     <linkfile src="shell.nix" dest="shell.nix"/>
+    <linkfile src="README.md" dest="README.md"/>
   </project>
   <project name="seL4.git" path="kernel" remote="seL4" revision="2d7ded68c654c55073b39a2ae66e5af5cfc5c3d8"/>
   <project name="sel4_tools.git" path="tools/seL4" revision="074a54aedcef97bfcc4ea0724a4c5d75fa311b3e" remote="seL4">
