@@ -1,17 +1,23 @@
 <manifest>
-  <remote name="seL4" fetch="https://github.com/seL4"/>
+  <remote fetch="https://github.com/seL4" name="seL4"/>
   <remote fetch="https://github.com/sel4proj" name="sel4proj"/>
+  <remote fetch="https://github.com/gridbugs" name="gridbugs"/>
 
   <default remote="seL4" upstream="master" dest-branch="master"/>
 
+  <project name="hello-sel4" revision="main" path="manifest" remote="gridbugs">
+    <linkfile src="apps" dest="apps"/>
+    <linkfile src="CMakeLists.txt" dest="CMakeLists.txt"/>
+    <linkfile src="settings.cmake" dest="settings.cmake"/>
+    <linkfile src="domain_schedule.c" dest="domain_schedule.c"/>
+    <linkfile src="shell.nix" dest="shell.nix"/>
+  </project>
   <project name="seL4.git" path="kernel" remote="seL4" revision="2d7ded68c654c55073b39a2ae66e5af5cfc5c3d8"/>
   <project name="sel4_tools.git" path="tools/seL4" revision="074a54aedcef97bfcc4ea0724a4c5d75fa311b3e" remote="seL4">
     <linkfile src="cmake-tool/init-build.sh" dest="init-build.sh"/>
   </project>
-
   <project name="sel4runtime.git" revision="master" remote="sel4proj" path="projects/sel4runtime"/>
   <project name="musllibc.git" path="projects/musllibc" revision="sel4"/>
   <project name="seL4_libs.git" revision="master" path="projects/seL4_libs"/>
   <project name="util_libs.git" revision="master" path="projects/util_libs"/>
-  <project name="sel4_projects_libs" revision="master" path="projects/sel4_projects_libs" remote="sel4proj" />
 </manifest>
