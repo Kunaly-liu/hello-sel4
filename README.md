@@ -2,7 +2,7 @@
 
 To clone, build and run:
 ```
-repo init https://github.com/gridbugs/hello-sel4.git
+repo init https://github.com/Kunaly-liu/hello-sel4.git
 repo sync
 mkdir build
 cd build
